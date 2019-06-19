@@ -1,5 +1,5 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 
 // view engine setup
@@ -10,11 +10,11 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 // index page
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
 	res.render('pages/index');
 });
 
-
-app.listen(3000, function() {
+const PORT=process.env.PORT || 3000;
+app.listen(PORT, () => {
   console.log('http://localhost:3000/');
 });

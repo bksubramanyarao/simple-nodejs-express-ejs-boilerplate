@@ -1,9 +1,9 @@
 {
-  "name": "express",
-  "version": "0.0.0",
+  "name": "simple-nodejs-express-ejs-boilerplate",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node app"
+    "dev": "node index"
   },
   "dependencies": {
     "ejs": "^2.6.1",
